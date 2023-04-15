@@ -15,20 +15,20 @@
 # limitations under the License.
 #
 
-CURRENT_DIRECTORY=`pwd`
-WORKER_JAR_PATH=$CURRENT_DIRECTORY/../../worker/target/worker-0.1-SNAPSHOT-jar-with-dependencies.jar
-MASTER_JAR_PATH=$CURRENT_DIRECTORY/../../master/target/master-0.1-SNAPSHOT.jar
-MASTER_CONFIG_PATH=$CURRENT_DIRECTORY/orion-master.properties
+# CURRENT_DIRECTORY=`pwd`
+WORKER_JAR_PATH=../../worker/target/worker-0.1-SNAPSHOT-jar-with-dependencies.jar
+MASTER_JAR_PATH=../../master/target/master-0.1-SNAPSHOT.jar
+MASTER_CONFIG_PATH=orion-master.properties
 
 echo $MASTER_JAR_PATH
 
 
 # Set your workspace. Here all the services files get copied.
-WORKSPACE=~/Desktop/temp/orion-workspace
+WORKSPACE=../../workspace
 cd $WORKSPACE
 
-rm -rf *
-chmod -R ug+rw $WORKSPACE
+# rm -rf *
+# chmod -R ug+rw $WORKSPACE
 
 mkdir logs
 mkdir active-processes
